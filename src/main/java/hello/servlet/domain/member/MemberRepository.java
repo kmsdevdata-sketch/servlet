@@ -22,6 +22,7 @@ public class MemberRepository {
     public Member save(Member member) {
         member.setId(++sequence);
         store.put(member.getId(), member);
+
         return member;
     }
 
